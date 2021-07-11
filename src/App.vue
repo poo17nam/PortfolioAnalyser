@@ -1,15 +1,23 @@
 <template>
-  <Navbar />
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Hello Vue 3 + Vite" />
+  <v-app>
+    <v-main>
+      <HelloWorld/>
+    </v-main>
+  </v-app>
 </template>
 
-<script setup>
-import HelloWorld from "./components/HelloWorld.vue";
-import Navbar from "./components/Navbar.vue";
+<script>
+import HelloWorld from './components/HelloWorld.vue'
 
-// This starter template is using Vue 3 experimental <script setup> SFCs
-// Check out https://github.com/vuejs/rfcs/blob/script-setup-2/active-rfcs/0000-script-setup.md
+export default {
+  name: 'App',
+
+  components: {
+    HelloWorld,
+  },
+
+  data: () => ({
+    //
+  }),
+}
 </script>
-
-<style></style>
